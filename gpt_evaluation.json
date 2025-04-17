@@ -1,0 +1,42 @@
+{
+  "1": {
+    "result": 0,
+    "motive": "The 'raw' entry expects an error message, while the 'E1' entry expects no deviations to appear, which implies no error—indicating different expected outcomes."
+  },
+  "2": {
+    "result": 1,
+    "motive": "Both entries describe the ability to search using the 'WD' status and expect matching results, expressing the same requirement."
+  },
+  "3": {
+    "result": 1,
+    "motive": "Both entries describe enabling the 'GO' button when required fields are filled out, indicating the same functional behaviour."
+  },
+  "4": {
+    "result": 0,
+    "motive": "The 'raw' entry only refers to displaying correct regions on load, while the 'E1' entry includes filtering logic based on multiple search criteria, making it broader in scope."
+  },
+  "5": {
+    "result": 1,
+    "motive": "Both entries require searching for a specific PLT number and displaying the corresponding result, which is the same outcome."
+  },
+  "6": {
+    "result": 1,
+    "motive": "Both entries confirm that the form should be successfully submitted even if the 'Effective Date' is left blank, showing equivalent expectations."
+  },
+  "7": {
+    "result": 1,
+    "motive": "Both describe the 'Upload Template' button as visible but disabled on page load, which is the same requirement despite added context in 'E1'."
+  },
+  "8": {
+    "result": 1,
+    "motive": "Both entries cover the successful creation of a pet owner and error handling when required fields are missing, expressing the same functional checks despite differences in structure."
+  },
+  "9": {
+    "result": 1,
+    "motive": "Both describe adding a visit and checking for success or error depending on whether required fields are completed. Despite structural differences, the core requirements match."
+  },
+  "10": {
+    "result": 1,
+    "motive": "Both entries describe sorting the search results by 'Originator' in alphabetical order, indicating identical functionality."
+  }
+}

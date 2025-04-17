@@ -1,0 +1,47 @@
+{
+  "1": {
+    "result": 0,
+    "motive": "The \'raw\' entry mentions an error being shown, while the \'E1\' entry describes a scenario where no deviations are displayed, indicating a difference in expected outcomes."
+  },
+  "2": {
+    "result": 1,
+    "motive": "Both entries describe a scenario where the \'WD\' status is available as a search criterion and displayed in the search results, indicating equivalent requirements."
+  },
+  "3": {
+    "result": 1,
+    "motive": "Both entries describe a scenario where the \'GO\' button becomes enabled after filling in the required fields, indicating equivalent requirements."
+  },
+
+ "4": {
+     "result": 0,
+     "motive": "The \'raw\' entry mentions the PLT BOM widget displaying the correct regions, while the \'E1\' entry describes a more detailed scenario with multiple search criteria, indicating a difference in scope."
+   },
+   "5": {
+     "result": 1,
+     "motive": "Both entries describe a scenario where the search results display the Pilot BOM with the matching PLT number, indicating equivalent requirements."
+   },
+   "6": {
+     "result": 1,
+     "motive": "Both entries describe a scenario where the form is submitted successfully despite the \'Effective Date\' field being empty, indicating equivalent requirements."
+   },
+   "7": {
+
+ "result": 1,
+     "motive": "Both entries describe a scenario where the \'Upload Template\' button is displayed but disabled by default, indicating equivalent requirements."
+   },
+   "8": {
+     "result": 0,
+     "motive": 
+"The \'raw\' entry describes two separate scenarios (adding a pet owner and leaving the form with the name field empty), while the \'E1\' entry combines these scenarios into a single description, indicating a difference in structure."
+  },
+  "9": {
+    "result": 0,
+    "motive": "The \'raw\' entry describes two separate scenarios 
+(adding a visit and leaving the form with the description field empty), while the \'E1\' entry combines these scenarios into a single description, indicating a difference in structure."
+  },
+  "10": {
+    "result": 1,
+
+  "motive": "Both entries describe a scenario where the search results are sorted by \'Originator\' in alphabetical order, indicating equivalent requirements."
+    }
+  }

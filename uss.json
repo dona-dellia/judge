@@ -1,0 +1,42 @@
+{
+  "1": {
+    "raw": "GIVEN a user views the Deviations landing page WHEN he searches selecting type emergency and may 21st 2001 as end THEN an error an error is showed",
+    "E1": "GIVEN a user is on the Deviations landing page, WHEN they select 'EMERGENCY' as the 'Deviation Type' and '05/21/2001' as the 'Effective End Date', and click the 'GO' button, THEN no deviations should be displayed in the results section, indicating there are no Emergency Deviations before May 21st, 2002."
+  },
+  "2": {
+    "raw": "GIVEN a user views the Change Objects landing page WHEN the user selects to search by the STATUS field THEN the WD status should be available as a search criteria and displayed in the search results",
+    "E1": "GIVEN the user is on the Change Objects landing page and has the necessary permissions to view and search for change objects, WHEN they select the 'STATUS' field in the search form and choose 'WD' as a search criterion, THEN the 'WD' status should be available as a search option in the 'Status' multiple selection field, and the search results should display all change objects with a status of 'WD' after clicking the 'GO' button."
+  },
+  "3": {
+    "raw": "GIVEN the user is on the BOM Maint page WHEN the user fills fields THEN go should become enabled",
+    "E1": "GIVEN the user is on the BOM Maint page, WHEN the user selects a valid 'BOM Facility', enters a valid 'Item Number', and chooses an 'Effective Date', THEN the 'GO' button should become enabled, allowing the user to retrieve the BOM details for the specified item."
+  },
+  "4": {
+    "raw": "GIVEN the user enters on the pilot bom search page. WHEN the page is loaded THEN the PLT bom widget should display the correct regions",
+    "E1": "GIVEN the user is on the Pilot BOM search page with the PLT BOM widget, WHEN the page is loaded with default or selected 'Regions' from the multiple selection list, THEN the PLT BOM widget should display the correct count of regions matching the search criteria, including any selected 'PLT Number', 'Status', 'Action Owner', 'ECO Number', 'MOD', 'Begin Date', 'End Date', and 'Originator"
+  },
+  "5": {
+    "raw": "GIVEN the user is on the PLT bom page WHEN the user enters PLT00006060 and submits the search THEN the results should display pilot bom PLT00006060 matching the provided number",
+    "E1": "GIVEN the user is on the Pilot BOM page AND has the necessary permissions to view and search for Pilot BOMs, WHEN the user enters 'PLT00006060' in the 'PLT Number' field and clicks the 'GO' button, THEN the search results should display the Pilot BOM with the matching PLT number 'PLT00006060'."
+  },
+  "6": {
+    "raw": "GIVEN the user is on the BOM Maint page WHEN the user leaves effectivity date field empty THEN the form should be submitted successfully",
+    "E1": "GIVEN the user is on the BOM Maint page and has filled in the required fields (BOM Facility and Item Number) but left the 'Effective Date' field empty, WHEN they click the 'GO' or 'SAVE' button to submit the form, THEN the form should be submitted successfully without displaying any error related to the 'Effective Date' field"
+  },
+  "7": {
+    "raw": "GIVEN the user is on the deviations page WHEN the page is loaded THEN the upload template button is displayed and disabled by default",
+    "E1": "GIVEN the user with read-only permission is on the deviations page, WHEN the page is loaded with the search form including fields like 'Deviation #', 'Regions', 'Status', 'Item', 'Update Status', 'Deviation Type', 'Effective From Date', 'Effective End Date', 'Originator', and 'Regional Analyst', THEN the 'Upload Template' button should be displayed but disabled by default, regardless of the search criteria or the state of the 'GO' button"
+  },
+  "8": {
+    "raw": "GIVEN a user is on the owner page and wants to add a pet owner WHEN they fill out the form THEN the system should display the owner Information screen GIVEN a user is on the owner page and wants to add a pet owner WHEN they leave the form with the name field empty THEN the system should display an error message",
+    "E1": "GIVEN the user is on the 'Add Owner' page, WHEN they fill out all the required fields ('First Name', 'Last Name', 'Address', 'City', 'Telephone') and click the 'Add Owner' button, THEN the new owner's information is saved and displayed. GIVEN the user is on the 'Add Owner' page, WHEN they leave any of the required fields empty and click the 'Add Owner' button, THEN an error message is displayed requiring all fields to be filled."
+  },
+  "9": {
+    "raw": "GIVEN a user is on the component pets and pisits and wants to add a visit WHEN they fill the fields THEN the system should display all the visits associated to the pet GIVEN a user is on the component pets and pisits and wants to add a visit WHEN they leave the form with the description field empty THEN the system should display an error message",
+    "E1": "GIVEN a user is viewing a pet's information and wants to add a visit, WHEN they fill in the 'Date' and 'Description' fields and click the 'Add Visit' button, THEN the system should add the new visit to the pet's visit history and display all visits associated with the pet GIVEN a user is viewing a pet's information and wants to add a visit, WHEN they leave the 'Description' field empty and click the 'Add Visit' button, THEN the system should display an error message requiring the user to fill in the 'Description' field."
+  },
+  "10": {
+    "raw": "GIVEN a user views the CO search results WHEN the user click on the arrow next to the originator column THEN the search results must be sorted by Originator in alphabetical order",
+    "E1": "GIVEN the user is on the 'Search Results' page for change orders AND the search results are displayed in a table with columns including 'Change Number', 'Status', 'Originator', and 'Message', WHEN the user clicks on the arrow next to the 'Originator' column, THEN the search results must be sorted by 'Originator' in alphabetical order, allowing the user to view the change orders grouped by their originators."
+  }
+}
