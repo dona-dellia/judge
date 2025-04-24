@@ -47,23 +47,23 @@ class Judge():
     @staticmethod
     def judge():
         """
+        
         Compare all available user stories with one another and generate
         a JSON structure for each submitted user story containing two variables:
 
-        result: A value of either 0 or 1.
-        motive: The reason justifying why the value 0 or 1 was assigned in each case.
+        result: A value BETWEEN 0 or 1 indicating the probability of equivalency.
+        motive: The reason justifying why the value was assigned in each case.
 
-        The structure should follow the format:
+        The output must be as it follows. The structure should follow the format:
 
         ```json
-        {
-            "1":{
-                "result":0
+            {
+                "result":0.33,
                 "motive": 'the explanation'
-            },
-            ...
-        }
+            }
         ```
+
+        
 
         """
         path = './uss.json'
