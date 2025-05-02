@@ -13,12 +13,7 @@ if __name__ == "__main__":
     for user_story in user_stories:
         test_scenarios = jix.get_all_test_scenarios(user_story)
 
-        for test_scenario in test_scenarios:
-                if need_enrichment:
-                     enrich_us = tse.enrich_use_story(user_story)
-                     new_test_cases = tcg.generate_test_cases(enrich_us)
-                     jix.inform_human(new_test_cases)
-                
+        for test_scenario in test_scenarios:                    
                 test_cases = tcg.generate_test_cases(test_scenario)
                 report = tce.execute(test_cases)
                 
@@ -28,7 +23,10 @@ if __name__ == "__main__":
                         print("Fluxo básico OK!")
 
                 elif(report.fail and ~test_cases.enriched):
-                    need_enrichment = True
+                     enrich_us = tse.enrich_use_story(user_story)
+                     new_test_cases = tcg.generate_test_cases(enrich_us)
+                     jix.inform_human(new_test_cases)
+
                 else:
                     need_human.append(user_story)
 
