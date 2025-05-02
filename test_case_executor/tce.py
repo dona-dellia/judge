@@ -14,4 +14,6 @@ def executor(test_cases):
 def analize_report(report):
 
     if(report.success):
-        
+        pass
+
+    pass
